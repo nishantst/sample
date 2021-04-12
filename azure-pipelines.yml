@@ -10,10 +10,12 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: 
-    cd/src
-    docker build -t nishantg98/image:latest
+- task : Docker 
   displayName: 'build image'
+  inputs: 
+    command: build
+    tag: latest 
+  
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
