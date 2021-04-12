@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: nishantstsample 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nishantstsample
+  template:
+    metadata:
+      labels:
+        app: nishantstsample 
+    spec:
+      containers:
+        - name: nishantstsample 
+          image: nishantdemo.azurecr.io/nishantstsample
+          ports:
+          - containerPort: 8080
