@@ -10,7 +10,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: docker build -t nishantg98/image:latest
+- script: 
+  cd/src
+  docker build -t nishantg98/image:latest
   displayName: 'build image'
 
 - script: |
