@@ -11,8 +11,8 @@ pool:
 
 steps:
 - script: 
-  cd/src
-  docker build -t nishantg98/image:latest
+    cd/src
+    docker build -t nishantg98/image:latest
   displayName: 'build image'
 
 - script: |
