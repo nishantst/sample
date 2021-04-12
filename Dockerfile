@@ -2,7 +2,7 @@ FROM node:alpine
 
 COPY ./script.js ./
 
-RUN npm i
+RUN  npm install -g npm@7.9.0
 
 EXPOSE 8080
 
