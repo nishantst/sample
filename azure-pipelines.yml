@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task : Docker 
+- task : Docker@1 
   displayName: 'build image'
   inputs: 
     command: build
